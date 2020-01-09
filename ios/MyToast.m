@@ -1,5 +1,6 @@
 #import "MyToast.h"
 #import "IOSNativeToast.h"
+#import <React/RCTLog.h>
 
 @interface MyToast()
 @property (nonatomic, retain) IOSNativeToast *toast;
@@ -24,7 +25,8 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(show:(NSString *)text)
 {
-  [self.toast showToast:text];
+    RCTLogInfo(@"Pretending to create an event %@", text);
+//  [self.toast showToast:text];
 }
 
 @end
