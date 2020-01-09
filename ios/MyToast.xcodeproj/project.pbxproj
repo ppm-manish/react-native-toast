@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		91A16FC923C6F65500332412 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A16FAA23C6F5EE00332412 /* libReact.a */; };
 		91A16FCE23C6F86300332412 /* IOSNativeToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A16FCD23C6F86300332412 /* IOSNativeToast.m */; };
+		91A16FD123C709BB00332412 /* Payabbhi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A16FD023C709BA00332412 /* Payabbhi.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* MyToast.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* MyToast.m */; };
 /* End PBXBuildFile section */
 
@@ -144,6 +145,7 @@
 		91A16F9623C6F5ED00332412 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		91A16FCD23C6F86300332412 /* IOSNativeToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSNativeToast.m; sourceTree = "<group>"; };
 		91A16FCF23C6F86E00332412 /* IOSNativeToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSNativeToast.h; sourceTree = "<group>"; };
+		91A16FD023C709BA00332412 /* Payabbhi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Payabbhi.framework; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* MyToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyToast.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* MyToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A16FD123C709BB00332412 /* Payabbhi.framework in Frameworks */,
 				91A16FC923C6F65500332412 /* libReact.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +178,7 @@
 				B3E7B5891CC2AC0600A0062D /* MyToast.m */,
 				91A16FCF23C6F86E00332412 /* IOSNativeToast.h */,
 				91A16FCD23C6F86300332412 /* IOSNativeToast.m */,
+				91A16FD023C709BA00332412 /* Payabbhi.framework */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				91A16F9523C6F5ED00332412 /* Frameworks */,
 			);
@@ -400,6 +404,7 @@
 		58B511ED1A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -450,6 +455,7 @@
 		58B511EE1A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -494,6 +500,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -511,6 +521,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
