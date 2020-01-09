@@ -178,7 +178,6 @@
 				B3E7B5891CC2AC0600A0062D /* MyToast.m */,
 				91A16FCF23C6F86E00332412 /* IOSNativeToast.h */,
 				91A16FCD23C6F86300332412 /* IOSNativeToast.m */,
-				91A16FD023C709BA00332412 /* Payabbhi.framework */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				91A16F9523C6F5ED00332412 /* Frameworks */,
 			);
@@ -187,6 +186,7 @@
 		91A16F9523C6F5ED00332412 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				91A16FD023C709BA00332412 /* Payabbhi.framework */,
 				91A16F9623C6F5ED00332412 /* React.xcodeproj */,
 			);
 			name = Frameworks;
